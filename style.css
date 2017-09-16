@@ -1,0 +1,72 @@
+@keyframes box {
+  0% {
+    transform: rotate(0deg);
+    border-radius: 50% 50% 50% 50%;
+    box-shadow: 0 0 10px red;
+  }
+  25% {
+    transform: rotate(130deg);
+    border-radius: 50% 50% 50% 50%;
+    box-shadow: 0 0 10px yellow;
+  }
+  50% {
+    transform: rotate(0deg);
+    border-radius: 50% 50% 50% 50%;
+    box-shadow: 0 0 10px green;
+  }
+  75% {
+    transform: rotate(-100deg);
+    border-radius: 50% 50% 50% 50% ;
+    box-shadow: 0 0 10px gold;
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+    border-radius: 50% 50% 50% 50%;
+    box-shadow: 0 0 10px orange;
+  }
+}
+
+@keyframes center {
+  0%{
+    transform: scale(1);
+  }
+  25%{
+    transform: scale(0.5);
+  }
+  50%{
+    transform: scale(1);
+  }
+  75%{
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#box:hover{
+  opacity: 0.5;
+}
+
+*{
+  margin: 0px;
+}
+
+#center {
+  background: white;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  margin: 170px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px black;
+  animation: center 10s ease-in-out 1s infinite;
+}
+
+#box{
+  background: url('http://store.hmv.com/HMVStore/media/product/58800/01-58800.jpg');
+  width: 400px ;
+  height: 400px ;
+  margin: 200px ;
+  animation: box 10s ease-in-out 1s infinite;
+}
