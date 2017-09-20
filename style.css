@@ -1,8 +1,8 @@
-@keyframes box {
+@keyframes box { /*  Создание кейфрейма */
   0% {
-    transform: rotate(0deg);
-    border-radius: 50% 50% 50% 50%;
-    box-shadow: 0 0 10px red;
+    transform: rotate(0deg); /* Поворот на 0 градусов */
+    border-radius: 50% 50% 50% 50%; /* Округление краев */
+    box-shadow: 0 0 10px red; /* Эффект тени */
   }
   25% {
     transform: rotate(130deg);
@@ -44,8 +44,8 @@
   }
 }
 
-#box:hover{
-  opacity: 0.5;
+#box:hover{ /* При наведении */
+  opacity: 0.5; /*
 }
 
 *{
